@@ -4,4 +4,18 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "black>=25.11.0",
+    "isort>=7.0.0",
+    "langchain>=1.0.7",
+    "langchain-openai>=1.0.3",
+    "langchain-tavily>=0.2.13",
+    "python-dotenv>=1.2.1",
+]
+
+
+# Use only when in office network or laptop
+[[tool.uv.index]]
+url = "https://pypi.ci.artifacts.walmart.com/artifactory/api/pypi/intl-architecture-developer-tools-pypi/simple/"
+default = true
+
